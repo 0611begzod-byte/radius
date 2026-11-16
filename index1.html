@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шашлычный Цех — Свежее мясо и товары для мангала</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Навигация -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-fire-burner"></i>
+        <span>МЯСНОЙ ЦЕХ</span>
+      </a>
+
+      <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero">Главная</a>
+        <a href="#shashlik">Шашлык</a>
+        <a href="#supplies">Товары</a>
+        <a href="#about">О нас</a>
+        <a href="#delivery">Оплата и доставка</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartToggleBtn">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span>Корзина</span>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Главный баннер -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-content">
+      <span class="sub-badge">Цех маринования и обжарки</span>
+      <h1>Настоящий сочный шашлык прямо с мангала</h1>
+      <p>Свежее мясо ежедневного закупа, кавказские и фирменные маринады, готовый шашлык, сырое маринованное мясо в ведерках и все для идеального пикника.</p>
+      <div class="hero-buttons">
+        <a href="#shashlik" class="btn btn-primary">Выбрать шашлык</a>
+        <a href="#supplies" class="btn btn-secondary">Товары для пикника</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Меню шашлыка (15 позиций) -->
+  <section id="shashlik" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Наш ассортимент шашлыка</h2>
+        <p>15 отборных позиций: доставляем в горячем виде или в ведерках для самостоятельной жарки</p>
+      </div>
+
+      <div class="grid cards-grid" id="shashlikGrid">
+        <!-- Генерируется через script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Товары для шашлыка -->
+  <section id="supplies" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Всё для мангала и пикника</h2>
+        <p>Угли, розжиг, фирменный уксус с луком, соусы и надёжные мангалы</p>
+      </div>
+
+      <div class="grid cards-grid" id="suppliesGrid">
+        <!-- Генерируется через script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- О нас -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="sub-badge">Собственное производство</span>
+          <h2>Работаем по стандартам качества</h2>
+          <p>Наш цех закупает только отборное мясо от проверенных фермерских хозяйств. Никакой заморозки — только охлажденный продукт, классические специи и натуральные маринады без химических усилителей вкуса.</p>
+          <ul class="features-list">
+            <li><i class="fa-solid fa-check"></i> Халяльное сырье и строгий санитарный контроль цеха</li>
+            <li><i class="fa-solid fa-check"></i> Маринование по традиционным рецептам от 12 часов</li>
+            <li><i class="fa-solid fa-check"></i> Жарим на натуральных березовых углях перед отправкой</li>
+          </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <h3>15+</h3>
+            <p>Видов сочного шашлыка</p>
+          </div>
+          <div class="stat-card">
+            <h3>35 мин</h3>
+            <p>Среднее время быстрой доставки</p>
+          </div>
+          <div class="stat-card">
+            <h3>100%</h3>
+            <p>Свежее фермерское мясо</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Доставка и Оплата -->
+  <section id="delivery" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Условия заказа и доставки</h2>
+      </div>
+
+      <div class="delivery-grid">
+        <div class="delivery-card">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h3>Горячая доставка</h3>
+          <p>В термосумках прямо к вашему столу. Бесплатно при заказе от 10 000 ₸ по городу.</p>
+        </div>
+        <div class="delivery-card">
+          <i class="fa-solid fa-box-open"></i>
+          <h3>Самовывоз из цеха</h3>
+          <p>Заберите маринованное или готовое мясо прямо из цеха со скидкой 10% на чек.</p>
+        </div>
+        <div class="delivery-card">
+          <i class="fa-solid fa-credit-card"></i>
+          <h3>Удобная оплата</h3>
+          <p>Kaspi QR, перевод, оплата банковской картой или наличными курьеру при получении.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты и адреса -->
+  <section id="contacts" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Наши адреса и контакты</h2>
+        <p>Приезжайте в наш цех или оформляйте заказ онлайн</p>
+      </div>
+
+      <div class="contacts-wrapper">
+        <div class="contact-box">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Адрес цеха</h3>
+          <p>г. Шымкент, ул. Байтурсынова, 45 (основной цех и пункт выдачи)</p>
+          <p>Ежедневно: с 10:00 до 23:00</p>
+        </div>
+        <div class="contact-box">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Телефон для справок</h3>
+          <p>Прием заказов и бронирование мяса на вынос</p>
+          <a href="tel:+77078170677" class="contact-link">+7 (707) 817-06-77</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Боковая панель корзины -->
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Ваш заказ</h3>
+      <button class="close-btn" id="closeCartBtn">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItemsContainer">
+      <p class="empty-cart-text">Корзина пуста. Добавьте мясо или товары!</p>
+    </div>
+    <div class="cart-footer">
+      <div class="total-row">
+        <span>Итого к оплате:</span>
+        <span class="total-price" id="cartTotalSum">0 ₸</span>
+      </div>
+      <button class="btn btn-whatsapp" id="sendWhatsappBtn">
+        <i class="fa-brands fa-whatsapp"></i> Оформить в WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- Подвал сайта -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h4>ШАШЛЫЧНЫЙ ЦЕХ</h4>
+        <p>Качественное мясо, профессиональный маринад, инвентарь для отдыха.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="tel:+7078170677" class="footer-social-btn" title="Позвонить">
+          <i class="fa-solid fa-phone"></i>
+          <span>+7 (707) 817-06-77</span>
+        </a>
+        <a href="https://wa.me/77078170677" target="_blank" rel="noopener noreferrer" class="footer-social-btn whatsapp-color" title="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+        <a href="https://www.instagram.com/begzod._.m" target="_blank" rel="noopener noreferrer" class="footer-social-btn insta-color" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Шашлычный цех. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
